@@ -1,0 +1,11 @@
+experiment:
+  condition: "2h1ai"        # 3h | 2h1ai | 1h2ai
+  participants: [human, human, ai]
+  rounds: 2
+  discussion_seconds: 60
+  voting_seconds: 15
+  allow_self_vote: true
+ai:
+  provider: "anthropic"     # یا "mock" وقتی API key نیست
+  model: "<model name>"
+  reply_delay_seconds: [2, 6]
